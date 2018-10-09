@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <meta charset="utf-8">
+     <title>Payment Form</title>
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="shortcut icon" href="img/favicon.jpg">
+     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700" rel="stylesheet">
+  </head>
+  <body>
+      <div class="form">
+          <div class="header">
+            <div class="header__descript">
+              <h1>Harold Finch <p>YOUR TOTAL</p></h1>
+            </div>
+            <div class="header__price">$88</div>
+          </div>
+          <form action="" method="post">
+            <br>
+            Credit card number
+            <br><input type="text" pattern="[0-9]{16}" maxlength="16" class="form__credit" name="credit" required><br>
+            Experation date<br>
+              <select class="form__month" name="month" required>
+                <option selected value="Month">Month</option>
+                <option value="January">January</option>
+                <option value="February">February</option>
+              </select>
+              <select class="form__year" name="year" required>
+                <option selected value="Year">Year</option>
+                <option value="1980">1980</option>
+                <option value="1981">1981</option>
+              </select>
+            <br>
+            CVV<br><input class="form__cvv" pattern="[0-9]{3}" type="password" maxlength="3"  name="cvv" required> 3 or 4 digits - <span class="form__example">view example</span><br>
+            <hr>
+            <input type="submit" value="Pay">
+            <input type="reset" value="Cencel order">
+
+
+
+         </div>
+        </form>
+      </div>
+   </body>
+</html>
+
